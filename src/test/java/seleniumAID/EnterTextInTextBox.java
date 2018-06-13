@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class EnterTextInTextBox {
@@ -25,7 +26,7 @@ public class EnterTextInTextBox {
 		
 		WebElement ele_nxt = driver.findElement(By.xpath("//span[text()='Next']"));
 		js.executeScript("arguments[0].click()", ele_nxt);
-		
+		Reporter.log("Test");
 		
 //		driver.findElement(By.id("identifierId")).sendKeys("Ramyavarthini@gmail.com");
 //		WebDriverWait wt = new WebDriverWait(driver,30);
